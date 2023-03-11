@@ -44,13 +44,18 @@ android {
 repositories {
     google()
     mavenCentral()
+//    maven { url "https://jitpack.io" }
 }
 
 
 dependencies {
-    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation fileTree(dir: 'libs', include: ['*.jar', '*.aar'])
     implementation project(':capacitor-android')
     implementation "androidx.appcompat:appcompat:$androidxAppCompatVersion"
+    // this is a dependency of Android-SingleSignOn-0.6.1
+    implementation "com.google.code.gson:gson:2.8.9"
+    // https://github.com/ionic-team/capacitor/issues/1225
+    // implementation "com.github.nextcloud:Android-SingleSignOn:0.6.0"
     testImplementation "junit:junit:$junitVersion"
     androidTestImplementation "androidx.test.ext:junit:$androidxJunitVersion"
     androidTestImplementation "androidx.test.espresso:espresso-core:$androidxEspressoCoreVersion"

@@ -1,10 +1,9 @@
 import { WebPlugin } from '@capacitor/core';
 
-import type { NextcloudSsoPlugin } from './definitions';
+import type { NextcloudSsoPlugin, SingleSignOnAccount } from './definitions';
 
 export class NextcloudSsoWeb extends WebPlugin implements NextcloudSsoPlugin {
-  async echo(options: { value: string }): Promise<{ value: string }> {
-    console.log('ECHO', options);
-    return options;
+  async chooseAccount(): Promise<SingleSignOnAccount> {
+    throw new Error('Not implemented');
   }
 }

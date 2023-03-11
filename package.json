@@ -1,7 +1,7 @@
 {
-  "name": "@capacitor-community/nextcloud-sso",
+  "name": "capacitor-nextcloud-sso",
   "version": "0.0.1",
-  "description": "Single sign-on for Nextcloud",
+  "description": "Capacitor wrapper around Nextcloud Sso for Android",
   "main": "dist/plugin.cjs.js",
   "module": "dist/esm/index.js",
   "types": "dist/esm/index.d.ts",
@@ -17,10 +17,10 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/b4rd/nextcloudsso.git"
+    "url": "git+https://github.com/b4rd/capacitor-nextcloud-sso.git"
   },
   "bugs": {
-    "url": "https://github.com/b4rd/nextcloudsso/issues"
+    "url": "https://github.com/b4rd/capacitor-nextcloud-sso/issues"
   },
   "keywords": [
     "capacitor",

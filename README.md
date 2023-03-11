@@ -11,9 +11,38 @@ npx cap sync
 
 ## API
 
-<docgen-index></docgen-index>
+<docgen-index>
+
+* [`chooseAccount()`](#chooseaccount)
+* [Interfaces](#interfaces)
+
+</docgen-index>
 
 <docgen-api>
-<!-- run docgen to generate docs from the source -->
-<!-- More info: https://github.com/ionic-team/capacitor-docgen -->
+<!--Update the source file JSDoc comments and rerun docgen to update the docs below-->
+
+### chooseAccount()
+
+```typescript
+chooseAccount() => Promise<SingleSignOnAccount>
+```
+
+**Returns:** <code>Promise&lt;<a href="#singlesignonaccount">SingleSignOnAccount</a>&gt;</code>
+
+--------------------
+
+
+### Interfaces
+
+
+#### SingleSignOnAccount
+
+| Prop         | Type                |
+| ------------ | ------------------- |
+| **`name`**   | <code>string</code> |
+| **`userId`** | <code>string</code> |
+| **`token`**  | <code>string</code> |
+| **`url`**    | <code>string</code> |
+| **`type`**   | <code>string</code> |
+
 </docgen-api>
