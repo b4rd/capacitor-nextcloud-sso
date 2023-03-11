@@ -49,9 +49,10 @@ repositories {
 
 
 dependencies {
-    implementation fileTree(dir: 'libs', include: ['*.jar', '*.aar'])
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation project(':capacitor-android')
     implementation "androidx.appcompat:appcompat:$androidxAppCompatVersion"
+    implementation files('libs/Android-SingleSignOn-0.6.1.aar')
     // this is a dependency of Android-SingleSignOn-0.6.1
     implementation "com.google.code.gson:gson:2.8.9"
     // https://github.com/ionic-team/capacitor/issues/1225

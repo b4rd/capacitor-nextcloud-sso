@@ -1,11 +1,11 @@
-# @capacitor-community/nextcloud-sso
+# capacitor-nextcloud-sso
 
 Single sign-on for Nextcloud
 
 ## Install
 
 ```bash
-npm install @capacitor-community/nextcloud-sso
+npm install capacitor-nextcloud-sso
 npx cap sync
 ```
 
